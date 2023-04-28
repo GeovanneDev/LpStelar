@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    --background: rgb(0, 30, 61);
+
+}
+
+.app-container {
+    font-family: "inter";
+    font-weight: 500;
+    background-color: var(--background);
+    display: grid;
+
+    grid-template-rows: repeat(max-content, 1fr);
+
+    min-width: 100dvw;
+    min-height: 100dvh;
+
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+/*MAIN_CONTENT*/
+.title_content-main {
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: rgb(237, 245, 253);
+
+    font-size: 4.2rem;
+    text-align: center;
+    padding: 1em;
+}
+
+.stellar_ad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3em;
+    width: min(100dvw -2rem, 96rem)
+}
+
+.stellar_ad-written {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.stellar_ad-written_title {
+    font-family: 'inter';
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgb(209, 209, 38);
+}
+
+.stellar_ad-written_text {
+    font-family: 'inter';
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: rgb(237, 245, 253);
+    font-weight: 300;
+}
+
+
+.stellar_ad-written_text span {
+    font-weight: bold;
+}
+
+.stellar_ad-written_text-l {
+    font-family: 'inter';
+    font-size: 3rem;
+    color: rgb(237, 245, 253);
+    font-weight: 400;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.stellar_ad-btn {
+    width: 70%;
+    height: 3em;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    background-color: rgb(209, 209, 38);
+    border-radius: 0.8rem;
+}
+
+.stellar_ad-btn:hover {
+    color: rgb(225, 222, 217);
+}
+
+/*MAIN_CONTENT-RESONSIVE*/
+@media only screen and (max-width: 768px) {
+    .stellar_ad {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 96rem;
+        margin: 0 auto;
+    }
+
+    .stellar_ad iframe {
+        width: 100%;
+    }
+
+    .stellar_ad-written_title {
+        font-size: 3rem;
+    }
+
+    .stellar_ad-written_text {
+        font-size: 2rem;
+    }
+
+    .stellar_ad-written_text-l {
+        font-size: 2rem;
+    }
+
+    .stellar_ad-btn {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 2em;
+    }
+}
+
+/*SECTION_CONTENT-STELLAR_BONUS*/
+.content-stellar_bonus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4em;
+    width: min(100dvw -2rem, 96rem)
+}
+
+.content-stellar_bonus-written {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.content-stellar_bonus-written_title {
+    font-family: 'inter';
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: rgb(237, 245, 253);
+    font-weight: 700;
+}
+
+.content-stellar_bonus-written_title span {
+    color: rgb(209, 209, 38);
+}
+
+.content-stellar_bonus-written_text {
+    font-family: 'inter';
+    font-size: 2rem;
+    color: rgb(237, 245, 253);
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+
+.content-stellar_bonus-btn {
+    width: 70%;
+    height: 3em;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    background-color: rgb(209, 209, 38);
+    border-radius: 0.8rem;
+
+
+}
+
+.content-stellar_bonus-btn:hover {
+    color: rgb(237, 245, 253);
+}
+
+.img-content-stellar_bonus img {
+    margin-left: 12.5em;
+    height: auto;
+    max-width: 70%;
+}
+
+/*SECTION_CONTENT-STELLAR_BONUS-RESPONSIVE*/
+@media only screen and (max-width: 768px) {
+    .content-stellar_bonus {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 96rem;
+        margin: 0 auto;
+    }
+
+    .stellar_ad iframe {
+        width: 100%;
+    }
+
+    .content-stellar_bonus-written_title {
+        font-size: 3rem;
+        margin-top: 1em;
+        line-height: 1.5em;
+    }
+
+    .stellar_ad-written_text {
+        font-size: 2rem;
+    }
+
+    .content-stellar_bonus-btn {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 2em;
+    }
+
+    .img-content-stellar_bonus img {
+        margin: 0;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/*SECTION_CONTENT-STELLAR_BONUS-RESPONSIVE*/
+/*SECTION_CONTENT-STELLAR_BONUS*/
+
+/*FOTTER-CONTENT*/
+.l-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4.5em;
+
+}
+
+.l-footer-title {
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    color: rgb(237, 245, 253);
+
+    font-size: 4.2rem;
+    text-align: center;
+}
+
+.l-footer-text {
+    font-family: 'inter';
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(237, 245, 253);
+    margin-top: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+
+    text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .l-footer {
+        display: flex;
+        place-items: center;
+    }
+
+    .l-footer-text {
+        font-size: 1.5rem;
+        line-height: 1.8em;
+    }
+}
+
+/*FOTTER-CONTENT*/
